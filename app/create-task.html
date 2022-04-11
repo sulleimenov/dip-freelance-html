@@ -1,0 +1,125 @@
+<!--#set var="title" value="Home" -->
+<!--#include virtual="/parts/header.html" -->
+
+	<div class="box">
+		<!--#include virtual="/parts/header-box.html" -->
+
+		<div class="box__body">
+			<div class="create-task">
+				<div class="create-task__progress">
+					<span class="create-task__progress-item active">Название</span>
+					<span class="create-task__progress-item">Описание</span>
+					<span class="create-task__progress-item">Бюджет</span>
+					<span class="create-task__progress-item">Публикация</span>
+				</div>
+				<div class="create-task__stage">
+					<div class="title">
+						Что нужно сделать
+					</div>
+					<div class="text">
+						Придумайте заголовок вашего задания. Кратко опишите, какую задачу надо реализовать исполнителю.
+					</div>
+					<div class="input">
+						<label for="title">Заголовок</label>
+						<input id="title" type="text" name="title">
+					</div>
+				</div>
+				<div class="create-task__stage">
+					<div class="title">
+						Описание задания
+					</div>
+					<div class="text">
+						Опишите подробно, что необходимо сделать в рамках проекта. Чем подробнее опишите задачу, тем качественнее будет результат.
+					</div>
+					<div class="text">
+						Укажите cущественные требования, которым должен соответствовать результат: форматы файлов, способы проверки и пр.
+					</div>
+					<div class="input">
+						<label for="descr">Описание</label>
+						<textarea id="descr" type="text" name="descr" cols="10" rows="10"></textarea>
+					</div>
+				</div>
+				<div class="create-task__stage">
+					<div class="title">
+						Условия сотрудничества
+					</div>
+					<div class="text">
+						Для максимальной эффективности рекомендуем указывать ожидаемую стоимость и сроки.
+					</div>
+					<div class="input">
+						<label for="time">Максимальный срок выполнения</label>
+						<div class="input-box">
+							<input id="time" type="text" name="time" placeholder="Введите срок">
+							<div class="input-box__info">в днях</div>
+						</div>
+					</div>
+					<div class="input">
+						<label for="time">Стоимость</label>
+						<div class="input-box">
+							<div class="input-box__contract">
+								<input type="checkbox" name="contract" id="contract">
+								<label for="contract">Договорная</label>
+							</div>
+							<input id="time" type="text" name="time" placeholder="Стоимость работ согласовывается индивидуально">
+							<div class="input-box__info">тенге</div>
+						</div>
+					</div>
+					<div class="input">
+						<label for="treaty">Стоимость</label>
+						<div class="rows">
+							<div class="input-radio">
+								<input type="radio" name="pay" id="treaty">
+								<label for="treaty">По договоренности</label>
+							</div>
+							<div class="input-radio">
+								<input type="radio" name="pay" id="agreement">
+								<label for="agreement">Заключение договора</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="create-task__stage show">
+					<div class="title">
+						Ваш проект
+					</div>
+					<div class="result">
+						<div class="result__item">
+							<div class="result__title">Название</div>
+							<div class="result__value">
+								Укажите cущественные требования, которым должен соответствовать результат: форматы файлов, способы проверки и пр.
+							</div>
+						</div>
+						<div class="result__item">
+							<div class="result__title">Описание</div>
+							<div class="result__value">
+								Решить прикрепленный файл в Jupiter Notebook до конца, основываясь на уже сделанных задачах. Подкорректировать уже сделанные задачи, если это необходимо.
+							</div>
+						</div>
+						<div class="result__item">
+							<div class="result__title">Бюджет</div>
+							<div class="result__value">
+								5000 тенге
+							</div>
+						</div>
+						<div class="result__item">
+							<div class="result__title">Срок исполнения</div>
+							<div class="result__value">
+								5 дней
+							</div>
+						</div>
+						<div class="result__item">
+							<div class="result__title">Варианты оплаты</div>
+							<div class="result__value">
+								По договору
+							</div>
+						</div>
+					</div>
+					<button class="button">Разместить задание</button>
+				</div>
+			</div>
+		</div>
+
+		<!--#include virtual="/parts/footer-box.html" -->
+	</div>
+
+<!--#include virtual="/parts/footer.html" -->
